@@ -7,16 +7,16 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Tvede-dk/testlibios"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kasper Tvede' => 'kasper@webmasteren.eu' }
-  s.source           = { :git => 'https://github.com/Tvede-dk/testlibios.git', :tag => s.version.to_s }
+  s.source           = { :https => 'testlib.framework', :tag => s.version.to_s }
   s.module_name      = 'testlibios'
-
+  s.requires_arc     = "true"
   s.ios.deployment_target = '8.0'
-  s.source_files = 'testlib.framework/**/*'
+  s.source_files = 'testlib.framework/Headers/*'
   
   #s.public_header_files = 'testlib/**/*.h'
 
   s.frameworks = 'UIKit'
-  s.public_header_files = "testlib.framework/**/*.h"
+  s.public_header_files = "testlib.framework/Headers/*.h"
   s.vendored_frameworks = 'testlib.framework'
 
 end
