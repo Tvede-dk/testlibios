@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Tvede-dk/testlibios"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Kasper Tvede' => 'kasper@webmasteren.eu' }
-  s.source           = { :https => 'testlib.framework', :tag => s.version.to_s }
+  s.source           = { :http => 'testlib.framework', :tag => s.version.to_s }
   s.module_name      = 'testlibios'
   s.requires_arc     = "true"
   s.ios.deployment_target = '8.0'
