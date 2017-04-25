@@ -11,6 +11,10 @@ import Foundation
 public class mainApi {
     
     
+    public init(){
+        
+    }
+    
     public var varaible : String = ""
     
     
