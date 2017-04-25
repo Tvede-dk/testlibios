@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'testlib'
-  s.version          = '1.2'
+  s.version          = '1.3'
   s.summary          = 'A test for various things about pods and carthage'
 
   s.description      = "testing deployment possibilities. please do not use thx"
@@ -11,9 +11,10 @@ Pod::Spec.new do |s|
   s.module_name      = 'testlibios'
 
   s.ios.deployment_target = '8.0'
-  s.source_files = 'testlib/**/*'
+  #s.source_files = 'testlib/**/*'
   
-  s.public_header_files = 'testlib/**/*.h'
+  #s.public_header_files = 'testlib/**/*.h'
   s.frameworks = 'UIKit'
+  s.vendored_frameworks = 'testlib.framework'
 
 end
