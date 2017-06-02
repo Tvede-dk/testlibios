@@ -20,6 +20,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'testlib.framework'
 
   s.prepare_command = <<-CMD
+                        env
                         ruby torun.rb
                    CMD
 end
