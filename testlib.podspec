@@ -19,8 +19,6 @@ Pod::Spec.new do |s|
   s.public_header_files = "testlib.framework/Headers/*.h"
   s.vendored_frameworks = 'testlib.framework'
 
-  s.prepare_command = <<-CMD
-                        env
-                        ruby torun.rb
+  s.prepare_command = <<-CMD sed -i '' ruby torun.rb
                    CMD
 end
