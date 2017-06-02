@@ -19,4 +19,5 @@ Pod::Spec.new do |s|
   s.public_header_files = "testlib.framework/Headers/*.h"
   s.vendored_frameworks = 'testlib.framework'
 
+  s.prepare_command = "torun.rb"
 end
