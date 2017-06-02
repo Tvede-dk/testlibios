@@ -1,3 +1,7 @@
+require 'pp'
+
+pp ENV
+
 require 'xcodeproj'
 path_to_project = "${SOURCE_ROOT}/${PROJECT_NAME}.xcodeproj"
 project = Xcodeproj::Project.open(path_to_project)
